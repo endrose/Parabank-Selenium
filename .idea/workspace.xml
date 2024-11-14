@@ -54,6 +54,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Cucumber Java.Feature: parabankRegister.executor": "Run",
+    "Cucumber Java.Scenario: Failed register  - Mismatch password.executor": "Run",
+    "Cucumber Java.Scenario: Failed register  - Required password.executor": "Run",
+    "Cucumber Java.Scenario: Valid register.executor": "Run",
     "JUnit.Login.executor": "Run",
     "JUnit.Login.invalidPassword.executor": "Run",
     "JUnit.Login.invalidUsername.executor": "Run",
@@ -121,11 +124,62 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Failed register  - Mismatch password" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/parabankRegister.feature" />
+      <option name="GLUE" value="stepDef" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Parabank-Selenium" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Login" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="NAME_FILTER" value="^Failed register  \- Mismatch password$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Failed register  \- Mismatch password$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Failed register  - Mismatch password" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Failed register  - Required password" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/parabankRegister.feature" />
+      <option name="GLUE" value="stepDef" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Parabank-Selenium" />
+      <option name="NAME_FILTER" value="^Failed register  \- Required password$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Failed register  \- Required password$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Failed register  - Required password" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Valid register" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/parabankRegister.feature" />
+      <option name="GLUE" value="stepDef" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Parabank-Selenium" />
+      <option name="NAME_FILTER" value="^Valid register$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Valid register$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Valid register" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,31 +188,6 @@
       <module name="Parabank-Selenium" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ParabankTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParabankTest.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Parabank-Selenium" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ParabankTest" />
-      <option name="METHOD_NAME" value="main" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RunTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Parabank-Selenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="runner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.RunTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,10 +209,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber Java.Feature: parabankRegister" />
-        <item itemvalue="JUnit.RunTest" />
+        <item itemvalue="Cucumber Java.Scenario: Failed register  - Required password" />
+        <item itemvalue="Cucumber Java.Scenario: Failed register  - Mismatch password" />
+        <item itemvalue="Cucumber Java.Scenario: Valid register" />
         <item itemvalue="JUnit.ParabankTest" />
-        <item itemvalue="JUnit.ParabankTest.main" />
-        <item itemvalue="JUnit.Login" />
       </list>
     </recent_temporary>
   </component>

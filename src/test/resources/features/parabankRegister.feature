@@ -1,6 +1,6 @@
 @All
 Feature: Register
-  @positive @register
+  @Test1 @positive @register
   Scenario: Valid register
   Given User is on parabank homepage
   When User click register link button
@@ -10,10 +10,12 @@ Feature: Register
   And User fill valid username
   And User input password confirmation
   When User click register button
-  Then User get error "Password did not match"
+  Then User register successfully
 
-  @negative @register
-  Scenario: Failed register  - Missmatch password
+
+
+  @Test2 @negative @register
+  Scenario: Failed register  - Mismatch password
   Given User is on parabank homepage
   When User click register link button
   Then User in register page
@@ -22,6 +24,7 @@ Feature: Register
   And User fill invalid username and password
   And User input password confirmation
   When User click register button
-  Then User get error "Password did not match"
+  Then User get error Password did not match
+
 
 

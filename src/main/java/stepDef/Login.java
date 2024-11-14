@@ -1,5 +1,8 @@
+package stepDef;
+
 import config.env_target;
-import org.junit.jupiter.api.*;
+import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;

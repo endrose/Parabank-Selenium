@@ -105,7 +105,7 @@
       <recent name="D:\Workspace\Selenium\Parabank-Selenium\src\main\resources\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Failed register  - Mismatch password">
+  <component name="RunManager" selected="JUnit.RunTest">
     <configuration name="Feature: parabankRegister" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/parabankRegister.feature" />
@@ -214,10 +214,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Failed register  - Mismatch password" />
         <item itemvalue="JUnit.RunTest" />
-        <item itemvalue="Cucumber Java.Scenario: Valid register" />
         <item itemvalue="Cucumber Java.Feature: parabankRegister" />
+        <item itemvalue="Cucumber Java.Scenario: Failed register  - Mismatch password" />
+        <item itemvalue="Cucumber Java.Scenario: Valid register" />
         <item itemvalue="Cucumber Java.Scenario: Failed register  - Required password" />
       </list>
     </recent_temporary>

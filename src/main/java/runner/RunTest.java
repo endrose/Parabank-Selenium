@@ -13,8 +13,10 @@ import reports.ReportGenerator;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "stepDef",
-        tags = "@Test1",
-        plugin = {"pretty", "html:target/RegressionReport.html"}
+        tags = "@All",
+        plugin = {"pretty", "html:target/RegressionReport.html",
+                "json:target/cucumber-reports/RegressionReport.json"
+        }
 )
 
 public class RunTest extends ReportGenerator {

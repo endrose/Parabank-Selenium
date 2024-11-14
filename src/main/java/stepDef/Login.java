@@ -82,8 +82,6 @@ public class Login extends env_target {
         Assertions.assertEquals("Epic sadface: Username and password do not match any user in this service", errorText, "Error message is not as expected");
 
         driver.quit();
-
-        driver.quit();
     }
 
 

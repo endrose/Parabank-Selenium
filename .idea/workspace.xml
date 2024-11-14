@@ -63,7 +63,7 @@
     "JUnit.Login.main.executor": "Run",
     "JUnit.ParabankTest.executor": "Run",
     "JUnit.ParabankTest.main.executor": "Run",
-    "JUnit.RunTest.executor": "Debug",
+    "JUnit.RunTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -105,7 +105,7 @@
       <recent name="D:\Workspace\Selenium\Parabank-Selenium\src\main\resources\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: parabankRegister">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Failed register  - Mismatch password">
     <configuration name="Feature: parabankRegister" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/parabankRegister.feature" />
@@ -184,10 +184,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParabankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RunTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Parabank-Selenium" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ParabankTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.RunTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -208,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Failed register  - Mismatch password" />
+        <item itemvalue="JUnit.RunTest" />
+        <item itemvalue="Cucumber Java.Scenario: Valid register" />
         <item itemvalue="Cucumber Java.Feature: parabankRegister" />
         <item itemvalue="Cucumber Java.Scenario: Failed register  - Required password" />
-        <item itemvalue="Cucumber Java.Scenario: Failed register  - Mismatch password" />
-        <item itemvalue="Cucumber Java.Scenario: Valid register" />
-        <item itemvalue="JUnit.ParabankTest" />
       </list>
     </recent_temporary>
   </component>

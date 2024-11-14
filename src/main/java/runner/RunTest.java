@@ -2,8 +2,10 @@ package runner;
 
 
 import org.junit.runner.RunWith;
+import org.junit.AfterClass;
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.Cucumber;
+import reports.ReportGenerator;
 
 //
 @RunWith(Cucumber.class)
@@ -15,5 +17,9 @@ import io.cucumber.junit.Cucumber;
         plugin = {"pretty", "html:target/RegressionReport.html"}
 )
 
-public class RunTest {
+public class RunTest extends ReportGenerator {
+    @AfterClass
+    public static void generateReport() {
+        ReportGenerator.generateReported();
+    }
 }

@@ -5,7 +5,9 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -68,6 +70,8 @@ public class Register extends env_target {
         Random rand = new Random();
         int userRand = rand.nextInt(10000);
         driver.findElement(By.id("customer.username")).sendKeys("Yesselenium"+userRand);
+        driver.findElement(By.id("customer.password")).sendKeys("yourpassword");
+
 
     }
 
@@ -86,11 +90,16 @@ public class Register extends env_target {
     @Then("User register successfully")
     public void userRegisterSuccessfully() {
         Duration duration = Duration.ofSeconds(10);
-        WebDriverWait wait = new  WebDriverWait(driver, duration);
+        WebDriverWait wait = new WebDriverWait(driver, duration);
+        // Wait for the success message to be visible
+        WebElement successMessage = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(
+                        By.xpath("//*[contains(text(), 'Your account was created successfully. You are now logged in.')]")
+                )
+        );
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[contains(text(),'Your account was created successfully. You are now')]")));
-
-        driver.quit();
+        // Optional: Assert that the success message is actually displayed
+        Assert.assertTrue("Success message not displayed", successMessage.isDisplayed());
 
     }
 
